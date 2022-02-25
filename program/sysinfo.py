@@ -14,7 +14,7 @@ from driver.decorators import sudo_users_only, humanbytes
 
 # FETCH SYSINFO
 
-@Client.on_message(command(["sysinfo", f"sysinfo@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["infos", f"infos@{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def give_sysinfo(client, message):
     splatform = platform.system()
@@ -35,19 +35,19 @@ async def give_sysinfo(client, message):
     psutil.disk_io_counters()
     disk = f"{humanbytes(du.used)} / {humanbytes(du.total)} " f"({du.percent}%)"
     cpu_len = len(psutil.Process().cpu_affinity())
-    somsg = f"""🖥 **System Information**
+    somsg = f"""🖥 **Informazioni di Sistema**
     
-**PlatForm :** `{splatform}`
-**PlatForm - Release :** `{platform_release}`
-**PlatFork - Version :** `{platform_version}`
-**Architecture :** `{architecture}`
-**Hostname :** `{hostname}`
+**Piattaforma :** `{splatform}`
+**Piattaforma - Rilascio :** `{platform_release}`
+**Piattaforma - Versione :** `{platform_version}`
+**Architettura :** `{architecture}`
+**Nome host :** `{hostname}`
 **IP :** `{ip_address}`
 **Mac :** `{mac_address}`
-**Processor :** `{processor}`
+**Processore :** `{processor}`
 **Ram : ** `{ram}`
 **CPU :** `{cpu_len}`
 **CPU FREQ :** `{cpu_freq}`
-**DISK :** `{disk}`
+**DISCO :** `{disk}`
     """
     await message.reply(somsg)
