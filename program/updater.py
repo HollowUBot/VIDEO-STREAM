@@ -60,18 +60,18 @@ async def update_repo(_, message: Message):
     msg = await message.reply("🔄 `processing update...`")
     update_avail = updater()
     if update_avail:
-        await msg.edit("✅ update finished\n\n• bot restarted, back active again in 1 minutes.")
+        await msg.edit("✅ Aggiornamento finito\n\n• riavvia il bot, di nuovo attivo tra 1 minuto.")
         system("git pull -f && pip3 install -r requirements.txt")
         execle(sys.executable, sys.executable, "main.py", environ)
         return
     await msg.edit("bot is **up-to-date** with [main](https://github.com/levina-lab/video-stream/tree/main)", disable_web_page_preview=True)
 
 
-@Client.on_message(command(["restart", f"restart@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["riavvia", f"riavvia@{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def restart_bot(_, message: Message):
-    msg = await message.reply("`restarting bot...`")
+    msg = await message.reply("`Bot riavviato...`")
     args = [sys.executable, "main.py"]
-    await msg.edit("✅ bot restarted\n\n• now you can use this bot again.")
+    await msg.edit("✅ bot riavviato\n\n• ora puoi usare di nuovo questo bot.")
     execle(sys.executable, *args, environ)
     return
