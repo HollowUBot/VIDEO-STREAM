@@ -1,6 +1,6 @@
 <p align="center"><a href="https://t.me/VeezVideoBot"><img src="https://github.com/levina-lab/video-stream/raw/main/driver/veezlogo.png"></a></p>
 <p align="center">
-    <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
+    <br><b>Video Stream è un Telegram Bot avanzato, questo ti consente di riprodurre video e musica su Telegram e Videochat di gruppo</b><br>
 </p>
 <p align="center">
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
@@ -26,43 +26,43 @@
 </p>
 
 ## ✨ Features
-- Music & Video stream support
-- MultiChat support
-- Playlist & Queue support
-- Skip, Pause, Resume, Stop feature
-- Music & Video downloader feature
-- Inline Search support
-- YouTube direct search support
-- YouTube/Local/Live/m3u8 stream support
-- Inline Search support
-- Control With Button support
-- Volume Control
-- Userbot Auto Join
-- Direct Updater
+- Supporto per streaming di musica e video
+- Supporto multichat
+- Supporto per playlist e coda
+- Salta, Pausa, Riprendi, Interrompi funzione
+- Funzione downloader di musica e video
+- Supporto per la ricerca inline
+- Supporto per la ricerca diretta su YouTube
+- Supporto streaming YouTube/Locale/Live/m3u8
+- Supporto per la ricerca in linea
+- Controllo con il supporto del pulsante
+- Controllo del volume
+- Partecipazione automatica dell'Userbot
+- Aggiornatore diretto
 
 ## 🛠 Commands:
 | Command | Description |
 | ------ | ------ |
-| `/mplay (query)` | play music from youtube |
-| `/vplay (query)` | play video from youtube |
-| `/vstream (live link)` | play video live streaming video |
-| `/pause` | pause the streaming (admin only) |
-| `/resume` | resume the streaming (admin only) |
-| `/skip` | switch to next stream (admin only) |
-| `/stop` | end the streaming (admin only) |
-| `/vmute` | for mute the userbot on voice chat |
-| `/vunmute` | for unmute the userbot on voice chat |
-| `/volume 1/200` | adjust the volume of userbot (userbot must be admin) |
-| `/playlist` | show you all the current stream list |
-| `/song (query)` | download music from youtube |
-| `/video (query)` | download video from youtube |
-| `/userbotjoin` | invite the userbot to join group (admin only) |
-| `/userbotleave` | instruct userbot to leave the group (admin only) |
-| `/leaveall` | order the userbot to leave from all group (sudo only) |
-| `/update` | update your bot directly without leaving telegram (sudo only) |
-| `/restart` | restart your bot directly without leaving telegram (sudo only) |
-| `/clean` | clean all raw files |
-| `/rmd` | clean all downloaded files |
+| `/mplay (messaggio)` | riprodurre musica da youtube |
+| `/vplay (messaggio)` | riprodurre video da youtube |
+| `/vstream (link della live)` | riprodurre video in streaming dal vivo |
+| `/pause` | mettere in pausa lo streaming (solo amministratore) |
+| `/resume` | riprendere lo streaming (solo amministratore) |
+| `/skip` | passa allo stream successivo (solo amministratore) |
+| `/stop` | termina lo streaming (solo amministratore) |
+| `/vmute` | per disattivare l'utentebot sulla chat vocale |
+| `/vunmute` | per riattivare l'utentebot sulla chat vocale |
+| `/volume 1/200` | regolare il volume dell'userbot (userbot deve essere amministratore) |
+| `/playlist` | mostrarti tutto l'elenco di stream corrente |
+| `/song (query)` | scarica musica da youtube |
+| `/video (query)` | scarica video da youtube |
+| `/userbotjoin` | invita lo userbot a unirsi al gruppo (solo amministratore) |
+| `/userbotleave` | istruire userbot a lasciare il gruppo (solo admin) |
+| `/leaveall` | ordina all'userbot di uscire da tutto i gruppi (solo sudo) |
+| `/update` | aggiorna il tuo bot direttamente senza lasciare telegram (solo sudo) |
+| `/restart` | riavvia il tuo bot direttamente senza lasciare telegram (solo sudo) |
+| `/clean` | pulisci tutti i file non elaborati |
+| `/rmd` | pulire tutti i file scaricati |
 ## Heroku Deployment 💜
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
 
